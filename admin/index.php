@@ -46,6 +46,8 @@
                     include "pages/tabel.php"; 
                 }else if(@$_GET["page"] == "analisis"){
                     include "pages/analisis.php"; 
+                }else if(@$_GET["page"] == "tugas"){
+                    include "pages/tugas.php"; 
                 }
             ?>
 
@@ -70,7 +72,7 @@
             echo '<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
                 <script src="js/chart/chart2.js"></script>'; 
         }else if(@$_GET["page"] == "tabel"){
-            echo '<script src="js/speech.js"></>'; 
+            echo '<script src="js/speech.js"></script>'; 
         }
     ?>
 

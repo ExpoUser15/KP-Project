@@ -4,7 +4,13 @@
             <li class="nav-item">
                 <a class="nav-link <?php if(@$_GET['page'] == ''){echo 'active';}else{echo 'text-white';} ?>" aria-current="page" href="?">
                     <span data-feather="home"></span>
-                    Dashboard
+                    Beranda
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link <?php if(@$_GET['page'] == 'tugas'){echo 'active';}else{echo 'text-white';} ?>" href="?page=tugas">
+                    <span data-feather="briefcase"></span>
+                    Tugas
                 </a>
             </li>
             <li class="nav-item">

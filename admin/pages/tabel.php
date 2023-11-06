@@ -1,5 +1,3 @@
-
-
 <main class="col-md-9 ms-sm-auto col-lg-10" style="background-color:  rgb(243 244 246);">
   <h1 class="pt-3">Tabel</h1>
   <div class="container my-4">
@@ -30,7 +28,7 @@
                 .ping {
                     width: 25px;
                     height: 25px;
-                    background-color: rgb(243 244 246);
+                    background-color: rgb(229 231 235); 
                     border-radius: 50%;
                     position: relative;
                     animation: pingAnimation 1s ease infinite;
