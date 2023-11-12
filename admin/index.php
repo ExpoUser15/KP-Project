@@ -73,6 +73,8 @@
                 <script src="js/chart/chart2.js"></script>'; 
         }else if(@$_GET["page"] == "tabel"){
             echo '<script src="js/speech.js"></script>'; 
+        }else if(@$_GET["page"] == "tugas"){
+            echo '<script src="js/script.js"></script>'; 
         }
     ?>
 

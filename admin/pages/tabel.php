@@ -13,39 +13,6 @@
               <div class="position-absolute" style="top: 3.5px; left: 12px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
               </div>
-              <style>
-                @keyframes pingAnimation {
-                    0%, 100% {
-                        transform: scale(1);
-                        opacity: 1;
-                    }
-                    50% {
-                        transform: scale(2);
-                        opacity: 0;
-                    }
-                }
-        
-                .ping {
-                    width: 25px;
-                    height: 25px;
-                    background-color: rgb(229 231 235); 
-                    border-radius: 50%;
-                    position: relative;
-                    animation: pingAnimation 1s ease infinite;
-                }
-
-                .mic{
-                  transition: all 256ms ease;
-                }
-
-                .mic:hover{
-                  color: blue;
-                }
-            </style>
-            <div class="position-absolute ping d-none" style="right: 7px; top: 3px;"></div>
-              <div class="position-absolute mic" style="top: 4px; right: 12px; cursor: pointer;">    
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
-              </div>
               <input id="searchInput" name="cari" type="text" placeholder="Ketik untuk mencari..." class="form-control form-control-sm w-100" style="padding: 0 2.5rem;">
             </div>
 
@@ -192,31 +159,6 @@
               <div class="position-absolute" style="top: 3.5px; left: 12px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
               </div>
-              <style>
-                @keyframes pingAnimation {
-                    0%, 100% {
-                        transform: scale(1);
-                        opacity: 1;
-                    }
-                    50% {
-                        transform: scale(2);
-                        opacity: 0;
-                    }
-                }
-        
-                .ping {
-                    width: 25px;
-                    height: 25px;
-                    background-color: rgb(243 244 246);
-                    border-radius: 50%;
-                    position: relative;
-                    animation: pingAnimation 1s ease infinite;
-                }
-            </style>
-            <div class="position-absolute ping d-none" style="right: 7px; top: 3px;"></div>
-              <div class="position-absolute mic" style="top: 4px; right: 12px; cursor: pointer;">    
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
-              </div>
               <input name="cari" type="text" placeholder="Ketik untuk mencari..." class="form-control form-control-sm w-100" style="padding: 0 2.5rem;">
             </div>
 
@@ -326,31 +268,6 @@
             <div class="w-100 position-relative">
               <div class="position-absolute" style="top: 3.5px; left: 12px;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-              </div>
-              <style>
-                @keyframes pingAnimation {
-                    0%, 100% {
-                        transform: scale(1);
-                        opacity: 1;
-                    }
-                    50% {
-                        transform: scale(2);
-                        opacity: 0;
-                    }
-                }
-        
-                .ping {
-                    width: 25px;
-                    height: 25px;
-                    background-color: rgb(243 244 246);
-                    border-radius: 50%;
-                    position: relative;
-                    animation: pingAnimation 1s ease infinite;
-                }
-            </style>
-            <!-- <div class="position-absolute ping" style="right: 7px; top: 3px;"></div> -->
-              <div class="position-absolute" style="top: 4px; right: 12px; cursor: pointer;">    
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mic"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
               </div>
               <input name="cari" type="text" placeholder="Ketik untuk mencari..." class="form-control form-control-sm w-100" style="padding: 0 2.5rem;">
             </div>

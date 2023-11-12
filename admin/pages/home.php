@@ -1,7 +1,7 @@
 <main class="col-md-9 ms-sm-auto col-lg-10" style="background-color:  rgb(243 244 246);">
   <h1 class="h2 pt-3">Beranda</h1>
   <div class="container my-4">
-    <div class="row">
+    <div class="row justify-content-center">
 
       <div class="col-sm-12 col-md-6 col-xl-4 shadow-sm pt-4 px-4 pb-2 bg-white">
         <div class="d-flex align-items-center justify-content-center rounded-circle" style="background-color: rgb(207 250 254); color: #3b82f6; width: 45px; height: 45px;">
@@ -73,9 +73,9 @@
   <div class="my-4 w-100 shadow-sm bg-white" id="myChart"></div>
 
   <div class="container my-4">
-    <div class="row gap-lg-3 gap-sm-4">
+    <div class="row gap-sm-4 gap-lg-0">
 
-      <div class="col-sm-12 col-lg-5 p-3 rounded-1 shadow-sm bg-white">
+      <div class="col-sm-12 col-lg-6 p-3 rounded-1 shadow-sm bg-white">
         <h6>Sering Dikunjungi</h6>
         <hr>
         <div class="row">
@@ -106,7 +106,7 @@
         </div> <!--/row-->
 
       </div><!--col-->
-      <div class="col-sm-12 col-lg-6 p-3 rounded-1 shadow-sm bg-white">
+      <div class="col-sm-12 col-lg-5 offset-lg-1 p-3 rounded-1 shadow-sm bg-white">
         <h6>Kalender</h6>
         <hr>
         <div id="calendar"></div>
