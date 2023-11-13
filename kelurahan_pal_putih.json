@@ -1,0 +1,16 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"kelurahan_pal_putih"},
+{"type":"table","name":"tb_kotak_saran","database":"kelurahan_pal_putih","data":
+[
+{"id":"k-12141414","nama":"Gix","rt\/rw":"001","no_telp":"86684885532","deskripsi":"tes no 2","kategori":"kritik","tanggal":"12113113"},
+{"id":"l-13qeqe","nama":"Gagg","rt\/rw":"006","no_telp":"46364463436","deskripsi":"aaffaaffaf","kategori":"lainnya","tanggal":"affafafafa"},
+{"id":"s-21002121","nama":"Gideon","rt\/rw":"002","no_telp":"082199193910","deskripsi":"tes aja","kategori":"saran","tanggal":"1qqqdqddqqd"}
+]
+}
+,{"type":"table","name":"tb_tugas","database":"kelurahan_pal_putih","data":
+[
+{"id":"adaddadad","nama":"ddddaddada","jenis_surat":"daadfaaf","no_telp":"241414114","tanggal":"ddagd","surat_pengantar":"fafsgag","ktp":"gagaag","kk":"gagagag","status":"Proses"}
+]
+}
+]
