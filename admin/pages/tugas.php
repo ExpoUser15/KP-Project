@@ -80,31 +80,37 @@
                       </tr>
                     </thead>
                     <tbody class="text-center">
-                      <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                        <td class="py-3 px-4">1</td>
-                        <td class="py-3 px-4">random</td>
-                        <td class="py-3 px-4">Surat Keterangan Domisili</td>
-                        <td class="py-3 px-4">placeholder</td>
-                        <td class="py-3 px-4">text</td>
-                        <td class="py-3 px-4">
-                            <p class="bg-danger p-2 text-white px-3 rounded-3">Proses</p>
-                        </td>
-                        <td class="py-3 ">
-                          <a class="text-dark text-decoration-none icon y" data-target="sk" title="Lihat Surat Pengantar RT/RW" style="cursor: pointer;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                          </a>
-                        </td>
-                        <td class="py-3 ">
-                          <a class="text-dark text-decoration-none icon y" data-target="ktp" title="Lihat KTP" style="cursor: pointer;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                          </a>
-                        </td>
-                        <td class="py-3 ">
-                          <a class="text-dark text-decoration-none icon y" title="Lihat KK" data-target="kk" style="cursor: pointer;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                          </a>
-                        </td>
-                      </tr>         
+                      <?php
+                        $query = mysqli_query($conn, "SELECT * FROM tb_tugas");
+                        $no = 0;
+                        while($data = mysqli_fetch_assoc($query)):
+                      ?>
+                        <tr style="border-bottom: 2px solid rgb(243 244 246);">
+                          <td class="py-3 px-4"><?php echo $no ?></td>
+                          <td class="py-3 px-4"><?php echo $data['nama'] ?></td>
+                          <td class="py-3 px-4"><?php echo $data['jenis_surat'] ?></td>
+                          <td class="py-3 px-4"><?php echo $data['no_telp'] ?></td>
+                          <td class="py-3 px-4"><?php echo $data['tanggal'] ?></td>
+                          <td class="py-3 px-4">
+                              <p class="<?php if($data['status'] == 'selesai'){echo 'bg-success';}else{echo 'bg-danger';} ?> p-2 text-white px-3 rounded-3"><?php echo $data['status'] ?></p>
+                          </td>
+                          <td class="py-3 ">
+                            <a class="text-dark text-decoration-none icon y" data-target="sk" title="Lihat Surat Pengantar RT/RW" style="cursor: pointer;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </a>
+                          </td>
+                          <td class="py-3 ">
+                            <a class="text-dark text-decoration-none icon y" data-target="ktp" title="Lihat KTP" style="cursor: pointer;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </a>
+                          </td>
+                          <td class="py-3 ">
+                            <a class="text-dark text-decoration-none icon y" title="Lihat KK" data-target="kk" style="cursor: pointer;">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </a>
+                          </td>
+                        </tr>
+                      <?php endwhile ?>         
                     </tbody>
                 </table>
             </div>

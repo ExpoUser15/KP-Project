@@ -32,115 +32,30 @@
               </tr>
             </thead>
             <tbody class="text-center">
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">1</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">2</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">3</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">4</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">5</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">6</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              
+              <?php 
+                $query = mysqli_query($conn, "SELECT * FROM tb_kotak_saran WHERE kategori = 'saran'");
+                $no = 1;
+                while($data = mysqli_fetch_assoc($query)):
+              ?>
+                <tr style="border-bottom: 2px solid rgb(243 244 246);">
+                  <td class="py-3 px-4"><?php echo $no ?></td>
+                  <td class="py-3 px-4"><?php echo $data['nama'] ?></td>
+                  <td class="py-3 px-4"><?php echo $data['rt/rw'];?></td>
+                  <td class="py-3 px-4"><?php echo $data['no_telp'] ?></td>
+                  <td class="py-3 px-4"><?php echo $data['tanggal'] ?></td>
+                  <td class="py-3 d-flex justify-content-center">
+                    <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                    </a>
+                    <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                    </a>
+                    <a href="#" class="text-dark text-decoration-none" title="Hapus">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                    </a>
+                  </td>
+                </tr>
+              <?php endwhile; ?>
             </tbody>
           </table>
         </div>
@@ -165,7 +80,7 @@
             <button type="submit" class="btn btn-dark ms-2" style="width: 80px;">Cari</button>
           </div>
         </form>
-        <div style="overflow-x: auto;">
+        <div style="overflow-x: auto; height: 20rem;">
           <table class="table table-sm table-borderless">
             <thead>
               <tr class="text-center" style="background-color: rgb(243 244 246); color: rgb(148 163 184);">
@@ -178,79 +93,29 @@
               </tr>
             </thead>
             <tbody class="text-center">
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">1</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">2</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">3</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">4</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              
+                <?php 
+                  $query = mysqli_query($conn, "SELECT * FROM tb_kotak_saran WHERE kategori = 'kritik'");
+                  while($data2 = mysqli_fetch_assoc($query)):
+                ?>
+                  <tr style="border-bottom: 2px solid rgb(243 244 246);">
+                    <td class="py-3 px-4"><?php echo $no ?></td>
+                    <td class="py-3 px-4"><?php echo $data2['nama']  ?></td>
+                    <td class="py-3 px-4"><?php echo $data2['rt/rw']  ?></td>
+                    <td class="py-3 px-4"><?php echo $data2['no_telp']  ?></td>
+                    <td class="py-3 px-4"><?php echo $data2['tanggal']  ?></td>
+                    <td class="py-3 d-flex justify-content-center">
+                      <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                      </a>
+                      <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      </a>
+                      <a href="#" class="text-dark text-decoration-none" title="Hapus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      </a>
+                    </td>
+                  </tr>
+                <?php endwhile; ?>
             </tbody>
           </table>
         </div>
@@ -288,79 +153,29 @@
               </tr>
             </thead>
             <tbody class="text-center">
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">1</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">2</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">3</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              <tr style="border-bottom: 2px solid rgb(243 244 246);">
-                <td class="py-3 px-4">4</td>
-                <td class="py-3 px-4">random</td>
-                <td class="py-3 px-4">data</td>
-                <td class="py-3 px-4">placeholder</td>
-                <td class="py-3 px-4">text</td>
-                <td class="py-3 d-flex justify-content-center">
-                  <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
-                  </a>
-                  <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
-                  </a>
-                  <a href="#" class="text-dark text-decoration-none" title="Hapus">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
-                  </a>
-                </td>
-              </tr>
-              
+                <?php 
+                  $query = mysqli_query($conn, "SELECT * FROM tb_kotak_saran WHERE kategori = 'lainnya'");
+                  while($data3 = mysqli_fetch_assoc($query)):
+                ?>
+                  <tr style="border-bottom: 2px solid rgb(243 244 246);">
+                    <td class="py-3 px-4"><?php echo $no ?></td>
+                    <td class="py-3 px-4"><?php echo $data3['nama']  ?></td>
+                    <td class="py-3 px-4"><?php echo $data3['rt/rw']  ?></td>
+                    <td class="py-3 px-4"><?php echo $data3['no_telp']  ?></td>
+                    <td class="py-3 px-4"><?php echo $data3['tanggal']  ?></td>
+                    <td class="py-3 d-flex justify-content-center">
+                      <a href="#" class="text-dark text-decoration-none" title="Lihat Saran">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                      </a>
+                      <a href="#" class="text-dark mx-3 text-decoration-none" title="Edit">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                      </a>
+                      <a href="#" class="text-dark text-decoration-none" title="Hapus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-trash-2"><polyline points="3 6 5 6 21 6"></polyline><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path><line x1="10" y1="11" x2="10" y2="17"></line><line x1="14" y1="11" x2="14" y2="17"></line></svg>
+                      </a>
+                    </td>
+                  </tr>
+                <?php endwhile; ?>
             </tbody>
           </table>
         </div>
