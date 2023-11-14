@@ -1,41 +1,7 @@
 <?php
   include "../config/config.php";
+  include "../admin/html/head.php";
 ?>
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard Template · Bootstrap v5.0</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      tr{
-        border-style: none;
-        border-bottom-style: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="style/dashboard.css" rel="stylesheet">
-</head>
-<body style="overflow-x: hidden;">
 
     <?php include "layout/header.php" ?>
     <?php include "layout/sidebar.php" ?>
@@ -47,25 +13,22 @@
                 if(@$_GET["page"] == ""){
                     include "pages/home.php"; 
                 }else if(@$_GET["page"] == "tabel"){
-                    include "pages/tabel.php"; 
+                    if(@$_GET["show"] == "true"){
+                        include "pages/tabel/saran.php";
+                    }else if(@$_GET['delete'] == "true"){
+                        include "pages/tabel/del.php";
+                    }else{
+                        include "pages/tabel.php";
+                    }
                 }else if(@$_GET["page"] == "analisis"){
                     include "pages/analisis.php"; 
                 }else if(@$_GET["page"] == "tugas"){
                     include "pages/tugas.php"; 
-                }
+                } 
             ?>
 
         </div>
     </div>
-
-
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
-    <script src='assets/fullcalendar/dist/index.global.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
-    <script>
-        feather.replace();
-    </script>
-
 
     <?php
         if(@$_GET["page"] == ""){
@@ -80,7 +43,7 @@
         }else if(@$_GET["page"] == "tugas"){
             echo '<script src="js/script.js"></script>'; 
         }
+
+        include "html/foot.php";
     ?>
 
-</body>
-</html>
