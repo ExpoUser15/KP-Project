@@ -4,12 +4,15 @@ const close = document.getElementById("close");
 const body = document.querySelector("body");
 const as = document.querySelector(".as");
 const pic = document.querySelector(".pic");
+const t = document.querySelector(".t");
+const p = document.querySelector(".p");
 
 showLetter.forEach(item => {
-    console.log(item.dataset)
     item.addEventListener("click", function(e){
         e.preventDefault();
         imgShow.classList.remove("d-none");
+        pic.src = `img/${item.dataset.image}`;
+        detectImageOrientation(pic.src);
     });
 })
 
@@ -17,32 +20,28 @@ close.addEventListener("click", function(e){
     imgShow.classList.add("d-none");
 })
 
-const dismiss = document.querySelector(".dismiss");
-const ba = document.querySelectorAll(".ba");
-dismiss.addEventListener("click", function(e){
-    e.preventDefault();
-    ba.forEach(item => {
-        if(item.dataset.id == 1){
-            item.checked = false;
-        }
-    })
-})
-
 function detectImageOrientation(imageUrl) {
     var img = new Image();
-  
+    
     img.onload = function() {
-      var width = this.naturalWidth;
-      var height = this.naturalHeight;
-
-      if (width > height) {
-          pic.style.width = "600px";
-        } else if (width < height) {
-            pic.style.height = "500px";
-        }
-    };
-  
+        var width = this.naturalWidth;
+        var height = this.naturalHeight;
+    
+            if (width > height) {
+                pic.style.width = "700px";
+            } else if (width < height) {
+                pic.style.width = "400px";
+            }
+        };
     img.src = imageUrl;
-  }
-  
-detectImageOrientation(pic.src);
+}
+
+window.addEventListener('load', function(){
+    if(window.innerWidth <= 767.98){
+        t.style.width = "600px";
+        p.style.overflowX = "auto";
+    }else{
+        t.style.width = "1100px";
+        p.style.overflowX = "hidden";
+    }
+});

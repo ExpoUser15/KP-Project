@@ -19,7 +19,7 @@
                 <div class="shadow-sm p-4 my-4 bg-white">
                     <h6>Perangkat yang Digunakan</h6>
                     <hr>
-                    <div class="mb-4 w-100" id="analisisChart3"></div>
+                    
                 </div>
           </div>
       </div>

@@ -15,44 +15,35 @@
                 <button type="submit" name="submit" class="btn btn-dark ms-2" style="width: 80px;">Cari</button>
             </form>
         </div>
-        <div class="col-md-12" style="overflow: auto;">
-            <table style="width: 900px;" class="mt-3">
+        <div class="col-md-12 p" style="overflow: auto;">
+            <table style="width: 1100px;" class="mt-3 t">
                 <thead>
                     <tr class="text-secondary fw-bolder">
                         <td class="p-2 ps-0">Nama</td>
                         <td>Jenis Surat</td>
-                        <td>Selesai</td>
+                        <td class="text-center">Status</td>
                     </tr>
                 </thead>
                 <tbody>
+                  <?php 
+                    $q = mysqli_query($conn, "SELECT * FROM tb_tugas");
+                    while($d = mysqli_fetch_assoc($q)):
+                  ?>
                     <tr>
-                        <td class="p-2 ps-0">Gideon Manobi</td>
-                        <td>Surat Keterangan Domisili</td>
-                        <td class="ps-3">
-                          <form action="">
-                            <input type="checkbox" data-bs-toggle="modal" data-bs-target="#saveNotif" class="ba" data-id="1">
+                        <td class="p-2 ps-0"><?php echo $d['nama'] ?></td>
+                        <td><?php echo $d['jenis_surat'] ?></td>
+                        <td class="text-center">
+                          <form method="POST" action="pages/tugas/action.php?user=<?php echo $d['id'] ?>&status=<?php if($d['status'] == 'Selesai'){echo "selesai";}else{echo "proses";} ?>">
+                            <button type="submit" class="btn <?php if($d['status'] != "Proses"){echo "btn-success";}else{echo "btn-danger";} ?>"><?php if($d['status'] != "Proses"){echo "Selesai";}else{echo "Proses";} ?></button>
                           </form>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="p-2 ps-0">Gideon Manobi</td>
-                        <td>Surat Keterangan Domisili</td>
-                        <td class="ps-3">
-                            <input id="input" type="checkbox">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="p-2 ps-0">Gideon Manobi</td>
-                        <td>Surat Keterangan Domisili</td>
-                        <td class="ps-3">
-                            <input type="checkbox">
-                        </td>
-                    </tr>
+                  <?php endwhile; ?>
                 </tbody>
             </table>
         </div>
     </div>
-    <div class="row">
+    <div class="row my-5">
         <div class="col">
             <form action="" class="d-flex justify-content-end align-items-center">
                 <div class="position-relative w-100">
@@ -82,7 +73,7 @@
                     <tbody class="text-center">
                       <?php
                         $query = mysqli_query($conn, "SELECT * FROM tb_tugas");
-                        $no = 0;
+                        $no = 1;
                         while($data = mysqli_fetch_assoc($query)):
                       ?>
                         <tr style="border-bottom: 2px solid rgb(243 244 246);">
@@ -92,20 +83,20 @@
                           <td class="py-3 px-4"><?php echo $data['no_telp'] ?></td>
                           <td class="py-3 px-4"><?php echo $data['tanggal'] ?></td>
                           <td class="py-3 px-4">
-                              <p class="<?php if($data['status'] == 'selesai'){echo 'bg-success';}else{echo 'bg-danger';} ?> p-2 text-white px-3 rounded-3"><?php echo $data['status'] ?></p>
+                              <p class="<?php if($data['status'] != "Proses"){echo "btn-success";}else{echo "btn-danger";} ?> p-2 text-white px-3 rounded-3"><?php echo $data['status'] ?></p>
                           </td>
                           <td class="py-3 ">
-                            <a class="text-dark text-decoration-none icon y" data-target="sk" title="Lihat Surat Pengantar RT/RW" style="cursor: pointer;">
+                            <a class="text-dark text-decoration-none icon y" data-image="<?php echo $data['surat_pengantar'] ?>" title="Lihat Surat Pengantar RT/RW" style="cursor: pointer;">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                             </a>
                           </td>
                           <td class="py-3 ">
-                            <a class="text-dark text-decoration-none icon y" data-target="ktp" title="Lihat KTP" style="cursor: pointer;">
+                            <a class="text-dark text-decoration-none icon y" data-image="<?php echo $data['ktp'] ?>" title="Lihat KTP" style="cursor: pointer;">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                             </a>
                           </td>
                           <td class="py-3 ">
-                            <a class="text-dark text-decoration-none icon y" title="Lihat KK" data-target="kk" style="cursor: pointer;">
+                            <a class="text-dark text-decoration-none icon y" title="Lihat KK" data-image="<?php echo $data['kk'] ?>" style="cursor: pointer;">
                               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-eye"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
                             </a>
                           </td>
@@ -119,22 +110,6 @@
 
   </div><!--container-->
 </main>
-<div class="modal" tabindex="-1" id="saveNotif">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <h5>Simpan Perubahan</h5>
-      </div>
-      <form action="" class="modal-footer">
-        <input type="hidden" name="status" value="selesai">
-        <button type="submit" class="btn btn-success">Simpan</button>
-        <button type="button" class="btn btn-danger dismiss" data-bs-dismiss="modal">Batal</button>
-      </form>
-    </div>
-  </div>
-</div>
-
-
 
 <div id="gsa" class="d-none" style="position: fixed; left: 0px; top: 0px; z-index: 9999; width: 100%; height: 100%; opacity: 1;">
     <div class="position-absolute bg-dark" style="z-index: 9990; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.85;"></div>
@@ -143,8 +118,8 @@
         <div id="close">
           <span class="text-danger position-absolute" style="height: 35px; width: 35px; top: 10; right: 10px; cursor: pointer;" data-feather="x-circle"></span>
         </div>
-          <img class="pic img-thumbnail" src="img/ddd.png" alt="">
-        </div>
+        <img class="pic img-thumbnail" src="" alt="">
+      </div>
     </div>
 </div>
 

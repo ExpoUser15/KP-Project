@@ -1,3 +1,13 @@
+<?php
+session_start();
+    include "../config/config.php";
+    $kj = @$_SESSION['username'];
+    $wqw = mysqli_query($conn,  "SELECT * FROM tb_admin WHERE username = '$kj'");
+    if(isset($_SESSION['username']) && mysqli_num_rows($wqw) == 1){
+        echo "<script>location.href = 'index.php';</script>";
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,14 +28,14 @@
             </header>
             <main class="mt-4">
                 <h4>Log In</h4>
-                <form action="">
+                <form action="login/log.php" method="POST">
                     <div class="mt-3">
-                        <input type="text" placeholder="Username" class="form-control">
+                        <input type="text" placeholder="Username" class="form-control" name="username">
                     </div>
                     <div class="mt-3">
-                        <input type="password" placeholder="Password" class="form-control">
+                        <input type="password" placeholder="Password" class="form-control" name="password">
                     </div>
-                    <button type="submit" class="btn btn-primary mt-3">Login</button>
+                    <button type="submit" class="btn btn-primary mt-3" name="login">Login</button>
                 </form>
             </main>
         </div>

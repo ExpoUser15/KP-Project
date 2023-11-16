@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 13, 2023 at 03:20 PM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Waktu pembuatan: 16 Nov 2023 pada 14.50
+-- Versi server: 10.4.18-MariaDB
+-- Versi PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_kotak_saran`
+-- Struktur dari tabel `tb_admin`
+--
+
+CREATE TABLE `tb_admin` (
+  `id` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `tanggal_dibuat` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data untuk tabel `tb_admin`
+--
+
+INSERT INTO `tb_admin` (`id`, `username`, `password`, `tanggal_dibuat`) VALUES
+('admin-1314414', 'admin', 'admin', ''),
+('admin-1700101493', 'Gideon', '123', '16 November 2023'),
+('admin-1700101524', 'User', '321', '16 November 2023');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tb_kotak_saran`
 --
 
 CREATE TABLE `tb_kotak_saran` (
@@ -35,10 +57,10 @@ CREATE TABLE `tb_kotak_saran` (
   `deskripsi` text NOT NULL,
   `kategori` enum('saran','kritik','lainnya') NOT NULL,
   `tanggal` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_kotak_saran`
+-- Dumping data untuk tabel `tb_kotak_saran`
 --
 
 INSERT INTO `tb_kotak_saran` (`id`, `nama`, `rt/rw`, `no_telp`, `deskripsi`, `kategori`, `tanggal`) VALUES
@@ -49,7 +71,7 @@ INSERT INTO `tb_kotak_saran` (`id`, `nama`, `rt/rw`, `no_telp`, `deskripsi`, `ka
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_tugas`
+-- Struktur dari tabel `tb_tugas`
 --
 
 CREATE TABLE `tb_tugas` (
@@ -61,28 +83,35 @@ CREATE TABLE `tb_tugas` (
   `surat_pengantar` varchar(255) NOT NULL,
   `ktp` varchar(255) NOT NULL,
   `kk` varchar(255) NOT NULL,
-  `status` varchar(10) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `status` enum('Selesai','Proses') NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_tugas`
+-- Dumping data untuk tabel `tb_tugas`
 --
 
 INSERT INTO `tb_tugas` (`id`, `nama`, `jenis_surat`, `no_telp`, `tanggal`, `surat_pengantar`, `ktp`, `kk`, `status`) VALUES
-('adaddadad', 'ddddaddada', 'daadfaaf', '241414114', 'ddagd', 'fafsgag', 'gagaag', 'gagagag', 'Proses');
+('sk-123131', 'Gideon Manobi', 'Surat Keterangan Domisili', '241414114', 'ddagd', 'ddd.png', 'ad.jpg', 'IMG.jpg', 'Proses'),
+('sk-3552255', 'Jenno', 'Surat Keterangan ', '90653252', '1313131w', 'IMG.jpg', 'ddd.png', 'ad.jpg', 'Proses');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `tb_kotak_saran`
+-- Indeks untuk tabel `tb_admin`
+--
+ALTER TABLE `tb_admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `tb_kotak_saran`
 --
 ALTER TABLE `tb_kotak_saran`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `tb_tugas`
+-- Indeks untuk tabel `tb_tugas`
 --
 ALTER TABLE `tb_tugas`
   ADD PRIMARY KEY (`id`);

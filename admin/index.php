@@ -1,5 +1,13 @@
 <?php
-  include "../config/config.php";
+session_start();
+include "../config/config.php";
+$kj = $_SESSION['username'];
+$wqw = mysqli_query($conn,  "SELECT * FROM tb_admin WHERE username = '$kj'");
+if(!isset($kj)){
+    echo "<script>location.href = 'login.php';</script>";
+}else if(mysqli_num_rows($wqw) != 1){
+    echo "<script>location.href = 'login.php';</script>";
+}
   include "../admin/html/head.php";
 ?>
 
@@ -20,10 +28,10 @@
                     }else{
                         include "pages/tabel.php";
                     }
-                }else if(@$_GET["page"] == "analisis"){
-                    include "pages/analisis.php"; 
                 }else if(@$_GET["page"] == "tugas"){
                     include "pages/tugas.php"; 
+                }else if(@$_GET['page'] == "admin"){
+                    include "pages/admin.php"; 
                 } 
             ?>
 
@@ -34,9 +42,7 @@
         if(@$_GET["page"] == ""){
             echo '<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
                 <script src="js/kalender.js"></script>
-                <script src="js/chart/chart.js"></script>'; 
-        }else if(@$_GET["page"] == "analisis"){
-            echo '<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+                <script src="js/chart/chart.js"></script>
                 <script src="js/chart/chart2.js"></script>'; 
         }else if(@$_GET["page"] == "tabel"){
             echo '<script src="js/speech.js"></script>'; 

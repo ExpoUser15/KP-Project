@@ -5,7 +5,7 @@
   </button>
   <div class="navbar-nav w-100">
     <div class="nav-item text-nowrap">
-      <a class="nav-link px-3 text-end" href="#">Sign out</a>
+      <a class="nav-link px-3 text-end" href="login/logout.php">Log out</a>
     </div>
   </div>
 </header>

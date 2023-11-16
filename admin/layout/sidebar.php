@@ -20,9 +20,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link <?php if(@$_GET['page'] == 'analisis'){echo 'active';}else{echo 'text-white';} ?>" href="?page=analisis">
-                    <span data-feather="bar-chart-2"></span>
-                    Analisis
+                <a class="nav-link <?php if(@$_GET['page'] == 'admin'){echo 'active';}else{echo 'text-white';} ?>" href="?page=admin">
+                    <span data-feather="user"></span>
+                    Admin
                 </a>
             </li>
         </ul>

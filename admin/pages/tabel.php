@@ -178,18 +178,3 @@
 
   </div><!--/container-->
 </main>
-
-<div class="modal" tabindex="-1" id="">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <h5>Simpan Perubahan</h5>
-      </div>
-      <form action="" class="modal-footer">
-        <input type="hidden" name="status" value="selesai">
-        <button type="submit" class="btn btn-success">Simpan</button>
-        <button type="button" class="btn btn-danger dismiss" data-bs-dismiss="modal">Batal</button>
-      </form>
-    </div>
-  </div>
-</div>

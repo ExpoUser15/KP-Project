@@ -93,4 +93,40 @@
   };
   var chart = new ApexCharts(document.querySelector("#myChart"), options);
   chart.render();
+
+  const options2 = {
+    chart: {
+      type: 'bar',
+      height: "400",
+      stacked: true,
+      stackType: "100%",
+      toolbar: false
+    },
+    xaxis: {
+      categories: ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"],
+      labels: {
+        show: false
+      }
+    },
+    yaxis: {
+      reversed: true,
+    },
+    legend: {
+      position: 'top', 
+      horizontalAlign: "left"
+    },
+    plotOptions: {
+      bar: {
+        horizontal: true
+      }
+    },
+    series: [
+      {
+        name: 'Pembuatan Surat',
+        data: [20, 30, 15, 25,11,56,32,51],
+      } 
+    ]
+  }
+  var chart2 = new ApexCharts(document.getElementById("analisisChart2"), options2);
+  chart2.render();
 })()
