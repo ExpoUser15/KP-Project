@@ -1,13 +1,16 @@
 (function () {
     'use strict'
 
-      const options2 = {
+      const options = {
         chart: {
           type: 'bar',
           height: "400",
           stacked: true,
           stackType: "100%",
-          toolbar: false
+          toolbar: false,
+          zoom: {
+            enabled: false,
+          }
         },
         xaxis: {
           categories: ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"],
@@ -42,7 +45,6 @@
           }  
         ]
       }
-      var chart2 = new ApexCharts(document.getElementById("analisisChart2"), options2);
-      chart2.render();
-    
+      var chart = new ApexCharts(document.getElementById("analisisChart2"), options);
+      chart.render();
 })()

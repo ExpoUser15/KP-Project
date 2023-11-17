@@ -1,7 +1,7 @@
 <?php
 session_start();
 include "../config/config.php";
-$kj = $_SESSION['username'];
+$kj = @$_SESSION['username'];
 $wqw = mysqli_query($conn,  "SELECT * FROM tb_admin WHERE username = '$kj'");
 if(!isset($kj)){
     echo "<script>location.href = 'login.php';</script>";
@@ -44,12 +44,7 @@ if(!isset($kj)){
                 <script src="js/kalender.js"></script>
                 <script src="js/chart/chart.js"></script>
                 <script src="js/chart/chart2.js"></script>'; 
-        }else if(@$_GET["page"] == "tabel"){
-            echo '<script src="js/speech.js"></script>'; 
-        }else if(@$_GET["page"] == "tugas"){
-            echo '<script src="js/script.js"></script>'; 
         }
 
         include "html/foot.php";
     ?>
-

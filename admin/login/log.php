@@ -5,7 +5,7 @@ session_start();
 
     if(isset($_POST['login'])){
         $username = $_POST['username'];
-        $password =$_POST['password'];
+        $password = $_POST['password'];
         $val = mysqli_query($conn, "SELECT * FROM tb_admin WHERE username = '$username' AND password = '$password'");
         if(mysqli_num_rows($val) == 1){
             $dt = mysqli_fetch_assoc($val);
