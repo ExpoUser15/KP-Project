@@ -5,7 +5,7 @@ $seminggu = array("Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu");
 $hari = date("w");
 $hari_ini = $seminggu[$hari];
 
-$waktu_sekarang = date("Y-m-d");
+$waktu_sekarang = date("d-m-Y");
 $tgl_sekarang   = date("d");
 $bln_sekarang = date("m");
 $thn_sekarang = date("Y");
@@ -37,4 +37,71 @@ function validasiFormatTanggal($string_waktu){
     }
 }
 
+function rentangWaktu($waktuAwal, $waktuAkhir){
+    $tanggal_awal = new DateTime($waktuAwal);
+
+    $tanggal_akhir = new DateTime($waktuAkhir);
+
+    $rentang_waktu = $tanggal_awal->diff($tanggal_akhir);
+
+    return $rentang_waktu->format('%a');
+}
+ 
+function namaHari($tanggal_string){
+    $tanggal_objek = DateTime::createFromFormat('d-m-Y', $tanggal_string);
+    $hari_array = array(
+        'Sunday'    => 'Minggu',
+        'Monday'    => 'Senin',
+        'Tuesday'   => 'Selasa',
+        'Wednesday' => 'Rabu',
+        'Thursday'  => 'Kamis',
+        'Friday'    => 'Jumat',
+        'Saturday'  => 'Sabtu'
+    );
+    $nama_hari = $tanggal_objek->format('l');
+    return $hari_array[$nama_hari];
+}
+
+
+$today = new DateTime();
+
+$currentDay = $today->format('N') - 1;
+
+$daysToSubtract = ($currentDay == 0) ? 7 : $currentDay;
+
+$lastMonday = $today->sub(new DateInterval("P{$daysToSubtract}D"));
+
+$weekdaysLastWeek = [];
+for ($i = 0; $i < 5; $i++) {
+    $weekdaysLastWeek[] = $lastMonday->format('d-m-Y');
+    $lastMonday->add(new DateInterval("P1D"));
+}
+ 
+
+$tanggalAwal = new DateTime("$thn_sekarang-$bln_sekarang-01");
+
+$jumlahHari = $tanggalAwal->format('t');
+
+$monthDay = [];
+for ($i = 0; $i < $jumlahHari; $i++) {
+    $tanggal = $tanggalAwal->format('d-m-Y');
+    $monthDay[] = $tanggal;
+    $tanggalAwal->add(new DateInterval('P1D'));
+}
+
+function asda($tanggal_database, $num){
+
+    $tanggal_database_obj = new DateTime($tanggal_database);
+
+    $tanggal_sekarang = new DateTime();
+
+    // $tanggal_database_obj->add(new DateInterval('P1W'));
+    $selisih_waktu = $tanggal_sekarang->diff($tanggal_database_obj);
+
+    if ($selisih_waktu->days <= $num) {
+        return "true";
+    } else {
+        return "false";
+    }
+}
 ?>

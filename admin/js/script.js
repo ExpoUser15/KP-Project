@@ -16,9 +16,17 @@ showLetter.forEach(item => {
     });
 })
 
-close.addEventListener("click", function(e){
-    imgShow.classList.add("d-none");
-})
+async function handleClose(){
+    try {
+        close.addEventListener("click", function(e){
+            imgShow.classList.add("d-none");
+        })
+    } catch (error) {
+        return;
+    }
+}
+
+handleClose();
 
 function detectImageOrientation(imageUrl) {
     var img = new Image();
@@ -37,11 +45,15 @@ function detectImageOrientation(imageUrl) {
 }
 
 window.addEventListener('load', function(){
+    document.documentElement.style.overflowX = "hidden";
     if(window.innerWidth <= 767.98){
         t.style.width = "600px";
         p.style.overflowX = "auto";
     }else{
-        t.style.width = "1100px";
+        t.style.width = "1050px";
         p.style.overflowX = "hidden";
     }
 });
+  
+const k = document.querySelectorAll('.k');
+const z = document.querySelectorAll('.z');

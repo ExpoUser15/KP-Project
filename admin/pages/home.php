@@ -1,61 +1,21 @@
 <main class="col-md-9 ms-sm-auto col-lg-10" style="background-color:  rgb(243 244 246);">
   <h1 class="h2 pt-3">Beranda</h1>
   <div class="container my-4">
-    <div class="row">
   <?php switch(@$_GET['t']){ 
     default:
     ?>
 
-      <div class="col-sm-12 col-md-6 col-xl-6 shadow-sm pt-4 px-4 pb-2 bg-white">
-        <div class="d-flex align-items-center justify-content-center rounded-circle" style="background-color: rgb(207 250 254); color: #3b82f6; width: 45px; height: 45px;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-              <circle cx="12" cy="7" r="4" />
-            </svg>
-        </div>
-        <div class="mt-4 w-100">
-          <h2 style="line-height: 1.1rem;">3132</h2>
-          <div class="text-secondary d-flex justify-content-between">
-            <p>Total Users</p> 
-            <span class="text-success">
-              <p class="d-inline">0.34%</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-12 col-md-6 col-xl-6 shadow-sm pt-4 px-4 pb-2 bg-white">
-        <div class="rounded-circle d-flex align-items-center justify-content-center" style="background-color:  rgb(207 250 254); color: #3b82f6; width: 45px; height: 45px;">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
-              <polyline points="13 2 13 9 20 9" />
-            </svg>
-        </div>
-        <div class="mt-4 w-100">
-          <h2 style="line-height: 1.1rem;">3132</h2>
-          <div class="text-secondary d-flex justify-content-between">
-            <p>Total Pengunjung</p> 
-            <span class="text-success">
-              <p class="d-inline">0.34%</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
-            </span>
-          </div>
-        </div>
-      </div>
-
-      </div> <!--/row-->
       
       <div class="row my-4 p-3 shadow-sm bg-white">
         <div class="col-md-12 p">
-          <div class="d-flex align-items-center">
+          <div class="d-flex">
                 <h6>Acara</h6>
                 <div class="d-flex justify-content-end w-100">
                     <div data-bs-toggle="modal" data-bs-target="#tambahAcara" title="tambahkan" class="me-3" style="cursor: pointer"><span data-feather="plus"></span></div>
                 </div>
             </div> 
           <hr>
-          <div style="overflow: auto;">
+          <div class="py-2" style="overflow: auto; max-height: 20rem">
             <table style="width: 1100px;" class="mt-3">
                   <thead>
                       <tr class="text-secondary fw-bolder">
@@ -69,7 +29,7 @@
                   </thead>
                   <tbody>
                     <?php 
-                      $q = mysqli_query($conn, "SELECT * FROM acara");
+                      $q = mysqli_query($conn, "SELECT * FROM acara ORDER BY status");
                       while($d = mysqli_fetch_assoc($q)):
                     ?>
                       <tr>
@@ -96,13 +56,19 @@
 
       <div class="row shadow-sm my-4 bg-white">
         <div class="col-12 p-4">
-          <div style="max-width: 220px;">
-            <select id="f" class="form-select form-select-sm">
-              <option>Bulan</option>
-              <option>Minggu</option>
-            </select>
-          </div>
+          <h6>Analisis Pembuatan Surat</h6>
           <hr>
+          <div class="row gap-1 mb-2">
+            <div class="col-lg-3 col-sm-12">
+              <select id="f" class="form-select form-select-sm">
+                <option>Bulan</option>
+                <option selected>Minggu</option>
+              </select>
+            </div>
+            <div class="col-lg-3 col-sm-12" id="col2">
+              <input type="text" value="12/11/2023 - 18/11/2023" class="form-control form-control-sm text-secondary" readonly>
+            </div>
+          </div>
           <div id="analisisChart"></div>
         </div>
       </div>
