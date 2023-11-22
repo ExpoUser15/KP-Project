@@ -2,7 +2,9 @@
 
 body {
   font-size: .875rem;
-  font-family: 'Source Sans 3', sans-serif;;
+  font-family: 'Source Sans 3', sans-serif;
+  padding-top: 1.1rem;
+  background-color:  rgb(243 244 246);
 }
 
 .feather {
@@ -30,6 +32,9 @@ body {
 }
 
 @media (max-width: 767.98px) {
+  body{
+    padding-top: 3rem;
+  }
   .sidebar {
     top: 2rem;
     

@@ -23,6 +23,9 @@
       }
 
       @media (min-width: 768px) {
+        body{
+          margin-top: 100px;
+        }
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
@@ -31,4 +34,4 @@
     <!-- Custom styles for this template -->
     <link href="style/dashboard.css" rel="stylesheet">
 </head>
-<body style="overflow-x: hidden;">
+<body style="overflow-x: hidden; margin-top: 3rem;">
