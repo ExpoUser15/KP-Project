@@ -46,21 +46,6 @@ function rentangWaktu($waktuAwal, $waktuAkhir){
 
     return $rentang_waktu->format('%a');
 }
- 
-function namaHari($tanggal_string){
-    $tanggal_objek = DateTime::createFromFormat('d-m-Y', $tanggal_string);
-    $hari_array = array(
-        'Sunday'    => 'Minggu',
-        'Monday'    => 'Senin',
-        'Tuesday'   => 'Selasa',
-        'Wednesday' => 'Rabu',
-        'Thursday'  => 'Kamis',
-        'Friday'    => 'Jumat',
-        'Saturday'  => 'Sabtu'
-    );
-    $nama_hari = $tanggal_objek->format('l');
-    return $hari_array[$nama_hari];
-}
 
 
 $today = new DateTime();
@@ -76,7 +61,6 @@ for ($i = 0; $i < 5; $i++) {
     $weekdaysLastWeek[] = $lastMonday->format('d-m-Y');
     $lastMonday->add(new DateInterval("P1D"));
 }
- 
 
 $tanggalAwal = new DateTime("$thn_sekarang-$bln_sekarang-01");
 
@@ -104,4 +88,22 @@ function asda($tanggal_database, $num){
         return "false";
     }
 }
+
+// Mendapatkan tanggal hari ini
+$today = date("Y-m-d");
+
+$dayOfWeek = date("N", strtotime($today));
+$daysToSubtract = $dayOfWeek + 6; 
+
+// Mendapatkan tanggal Senin minggu lalu
+$lastMonday = date("Y-m-d", strtotime("-$daysToSubtract days", strtotime($today)));
+
+// Mendapatkan tanggal Jumat minggu lalu
+$lastFriday = date("Y-m-d", strtotime("-$daysToSubtract days +4 days", strtotime($today)));
+$mingguLalu = [];
+for ($i = 0; $i < 5; $i++) {
+    $currentDate = date("d-m-Y", strtotime("$lastMonday +$i days"));
+    $mingguLalu[] = $currentDate;
+}
+
 ?>

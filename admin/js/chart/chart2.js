@@ -33,15 +33,15 @@
         series: [
           {
             name: 'Saran',
-            data: [20, 30, 15, 25,11,56],
+            data: [],
           },
           {
             name: 'Kritikan',
-            data: [10, 25, 30, 10,12,3],
+            data: [],
           },
           {
             name: 'Lainnya',
-            data: [17, 45, 32, 50,22,13],
+            data: [],
           }  
         ]
       }
@@ -55,9 +55,9 @@
       fetch('../utils/analisis.php')
       .then(res => res.json())
       .then(res => {
-        hitungSaran = {};
-        hitungKritik = {};
-        hitungLainnya = {};
+        let hitungSaran = {};
+        let hitungKritik = {};
+        let hitungLainnya = {};
         res['data'].forEach(e => {
           if(e.kategori == 'saran'){
             if (!hitungSaran[e.tanggal]) {
