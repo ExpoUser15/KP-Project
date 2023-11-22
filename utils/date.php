@@ -79,7 +79,6 @@ function asda($tanggal_database, $num){
 
     $tanggal_sekarang = new DateTime();
 
-    // $tanggal_database_obj->add(new DateInterval('P1W'));
     $selisih_waktu = $tanggal_sekarang->diff($tanggal_database_obj);
 
     if ($selisih_waktu->days <= $num) {
@@ -89,16 +88,13 @@ function asda($tanggal_database, $num){
     }
 }
 
-// Mendapatkan tanggal hari ini
 $today = date("Y-m-d");
 
 $dayOfWeek = date("N", strtotime($today));
 $daysToSubtract = $dayOfWeek + 6; 
 
-// Mendapatkan tanggal Senin minggu lalu
 $lastMonday = date("Y-m-d", strtotime("-$daysToSubtract days", strtotime($today)));
 
-// Mendapatkan tanggal Jumat minggu lalu
 $lastFriday = date("Y-m-d", strtotime("-$daysToSubtract days +4 days", strtotime($today)));
 $mingguLalu = [];
 for ($i = 0; $i < 5; $i++) {
