@@ -34,10 +34,3 @@ include "date.php";
 
     $jsonData = json_encode($json);
     echo $jsonData; 
-
-//     $dataToEncrypt = "AnalisisMingguanPembuatanSurat";
-//     $key = openssl_random_pseudo_bytes(32);
-//     $iv = openssl_random_pseudo_bytes(16); // Initialization Vector
-// $encryptedData = openssl_encrypt($dataToEncrypt, 'aes-256-cbc', $key, 0, $iv);
-// echo $encryptedData;
-

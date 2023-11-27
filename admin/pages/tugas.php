@@ -4,7 +4,7 @@ include "../utils/date.php";
 <main class="col-md-9 ms-sm-auto col-lg-10">
   <h1 class="h2 pt-3">Tugas</h1>
   <div class="container my-4">
-    <div class="row shadow-sm p-3 mb-3">
+    <div class="row shadow-sm p-3 mb-3 bg-white">
         <div class="col-12 ">
             <h6>Tugas Terbaru</h6>
             <hr>
@@ -18,7 +18,7 @@ include "../utils/date.php";
                 <button type="submit" name="submit" class="btn btn-dark ms-2" style="width: 80px;">Cari</button>
             </form>
         </div>
-        <div class="col-md-12 mt-3 p" style="overflow: auto; max-height: 20rem;">
+        <div class="col-md-12 mt-3" style="overflow: auto; max-height: 20rem;">
             <table class="t">
                 <thead>
                     <tr class="text-secondary fw-bolder">
@@ -70,7 +70,7 @@ include "../utils/date.php";
             </table>
         </div>
     </div>
-    <div class="row my-5">
+    <div class="row my-5 bg-white p-4">
         <div class="col">
             <form action="" method="POST" class="d-flex justify-content-end align-items-center">
                 <div class="position-relative w-100">

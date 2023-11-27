@@ -28,8 +28,8 @@ $s = $_SESSION['username'];
         </div>
       </div>
     </div>
-    <div class="row my-5">
-      <div class="col">
+    <div class="row my-5" style="background-color: rgb(243 244 246);">
+      <div class="col bg-white p-4">
         <div style="overflow-x: auto;">
           <h5>Daftar Admin</h5>
           <hr>

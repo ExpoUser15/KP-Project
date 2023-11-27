@@ -8,7 +8,7 @@
         </header>
         <p>Anda dapat berbagi suara Anda melalui kotak saran. Setiap masukan Anda sangat penting untuk perubahan positif. Kami mendengar, kami peduli, dan kami berkomitmen untuk meningkatkan pelayanan kami. Surat online Pal Putih mempercepat proses administratif. Sekarang, pengurusan surat menjadi lebih efisien dan praktis.</p>
         <p style="margin: 0;">Hari Pelayanan: Senin - Jumat</p>
-        <p>Jam Pelayanan: 09:00 - 02:00</p>
+        <p>Jam Pelayanan: 09:00 - 14:00</p>
     </section>
 
     <section id="three">

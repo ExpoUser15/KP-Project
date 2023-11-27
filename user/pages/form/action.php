@@ -36,11 +36,16 @@ if($q == 'surat'){
                 location.href = "../../index.php";
             </script>';
         }else{
-            $namaBaru = time() . uniqid() . "-" . $extensi[0] . '.' . $extensi1; 
-            $namaBaru2 = time() . uniqid() . "-" . $extensi3[0] . '.' . $extensi21; 
-            $namaBaru3 = time() . uniqid() . "-" . $extensi3[0] . '.' . $extensi31; 
+            $teksDenganMinus = str_replace(' ', '-', $extensi[0]);
+            $teksDenganMinus2 = str_replace(' ', '-', $extensi2[0]);
+            $teksDenganMinus3 = str_replace(' ', '-', $extensi3[0]);
+            $namaBaru = time() . uniqid() . "-" . $teksDenganMinus . '.' . $extensi1; 
+            $namaBaru2 = time() . uniqid() . "-" . $teksDenganMinus2 . '.' . $extensi21; 
+            $namaBaru3 = time() . uniqid() . "-" . $teksDenganMinus3. '.' . $extensi31; 
     
             move_uploaded_file($tmpName, '../../../admin/img/' . $namaBaru);
+            move_uploaded_file($tmpName2, '../../../admin/img/' . $namaBaru2);
+            move_uploaded_file($tmpName3, '../../../admin/img/' . $namaBaru3);
     
             $id = htmlspecialchars(mysqli_real_escape_string($conn, $_POST['id']));
             $nama = htmlspecialchars(mysqli_real_escape_string($conn, $_POST['nama']));

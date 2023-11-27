@@ -32,6 +32,6 @@
       }
     </style>
     <!-- Custom styles for this template -->
-    <link href="style/dashboard.css" rel="stylesheet">
+    <link href="style/style.css" rel="stylesheet">
 </head>
 <body style="overflow-x: hidden; margin-top: 3rem;">

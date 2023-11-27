@@ -51,9 +51,7 @@ window.addEventListener('load', function(){
         p.style.overflowX = "auto";
     }else{
         t.style.width = "1050px";
-        p.style.overflowX = "hidden";
+        // p.style.overflowX = "hidden";
     }
 });
   
-const k = document.querySelectorAll('.k');
-const z = document.querySelectorAll('.z');
